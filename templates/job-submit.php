@@ -8,7 +8,7 @@
  * @author      Automattic
  * @package     WP Job Manager
  * @category    Template
- * @version     1.32.0
+ * @version     1.33.0
  */
 
 if ( ! defined( 'ABSPATH' ) ) {
@@ -76,7 +76,7 @@ global $job_manager;
 			<input type="submit" name="submit_job" class="button" value="<?php echo esc_attr( $submit_button_text ); ?>" />
 			<?php
 			if ( $can_resume_later ) {
-				echo '<input type="submit" name="save_draft" class="button secondary" value="' . esc_attr__( 'Save Draft', 'wp-job-manager' ) . '" />';
+				echo '<input type="submit" name="save_draft" class="button secondary save_draft" value="' . esc_attr__( 'Save Draft', 'wp-job-manager' ) . '" formnovalidate />';
 			}
 			?>
 			<span class="spinner" style="background-image: url(<?php echo esc_url( includes_url( 'images/spinner.gif' ) ); ?>);"></span>
